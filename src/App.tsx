@@ -12,8 +12,8 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
         <FileContextProvider>
+        <ToastContainer />
           <Routes>
-            <ToastContainer />
             <Route path='/' element={<LoadFile />} />
             <Route path='/search' />
           </Routes>
