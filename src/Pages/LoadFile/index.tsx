@@ -6,7 +6,7 @@ import {
     DefaultPage,
     UploadButton 
 } from '../../components';
-import { postFile } from '../../helpers/utils/postFile';
+import { postFile } from '../../services/postFile';
 import { useFile } from '../../helpers/context/useFile';
 
 
