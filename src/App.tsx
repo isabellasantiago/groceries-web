@@ -1,4 +1,4 @@
-import LoadFile from "./Pages/LoadFile"
+import { LoadFile, Search } from "./Pages"
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
@@ -15,7 +15,7 @@ function App() {
         <ToastContainer />
           <Routes>
             <Route path='/' element={<LoadFile />} />
-            <Route path='/search' />
+            <Route path='/search' element={<Search />}/>
           </Routes>
         </FileContextProvider>
       </BrowserRouter>

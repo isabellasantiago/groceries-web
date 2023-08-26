@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode, Fragment } from 'react';
 import Header from "./Header";
 import * as S from './style';
 
@@ -8,11 +8,11 @@ interface DefaultPageProps {
 
 export const DefaultPage: React.FC<DefaultPageProps> = ({ children }) => {
     return(
-        <>
+        <Fragment>
             <Header/>        
             <S.Body>
                 {children}
             </S.Body>
-        </>
+        </Fragment>
     )
 }

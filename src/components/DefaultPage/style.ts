@@ -1,6 +1,7 @@
 import { styled } from "styled-components";
 
 export const Body = styled.div`
+    box-sizing: border-box !important;
     width: 100;
     height: 100%;
     padding: 0;

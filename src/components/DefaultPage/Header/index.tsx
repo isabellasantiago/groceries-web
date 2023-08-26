@@ -6,7 +6,7 @@ const Header = () => {
     return(
         <S.HeaderBar>
             <S.Brand>
-                <img src={brand} />
+                <img src={brand} alt='groceries shop logo'/>
             </S.Brand>
         </S.HeaderBar>
     )

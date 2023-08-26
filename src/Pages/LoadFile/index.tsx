@@ -12,7 +12,7 @@ import { useFile } from '../../helpers/context/useFile';
 
 interface LoadFileProps {}
 
-const LoadFile: React.FC<LoadFileProps> = () => {
+export const LoadFile: React.FC<LoadFileProps> = () => {
     const navigate = useNavigate();
     const { setFiles, setLoading, isLoading } = useFile();
     
@@ -40,5 +40,3 @@ const LoadFile: React.FC<LoadFileProps> = () => {
         </DefaultPage>
     )
 }
-
-export default LoadFile;
