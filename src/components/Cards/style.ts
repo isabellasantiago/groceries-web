@@ -16,15 +16,6 @@ export const CardContainer = styled.div`
     align-items: center;
     gap: 5px;
 
-
-    @media (min-width: 734px) {
-        /* flex-direction: row; */
-    }
-
-    @media (min-width: 910px) {
-        height: 90px;
-        padding: 10px;
-    }
 `;
 
 export const Title = styled.h1`

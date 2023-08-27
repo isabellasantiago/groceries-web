@@ -73,18 +73,19 @@ export const CardList = styled(Container) <{ itemsQuantity?: number }>`
         display: none;
     }
 
-    @media (min-width: 734px) {
-        width: 53%;
+    @media (min-width: 670px) {
+        width: 55%;
         flex-wrap: wrap;
         flex-direction: row;
         align-items: flex-start;
-        justify-content: space-evenly;
+        justify-content: flex-start;
+        
     }
     
     @media (min-width: 914px) {
         width: 90%;
-        justify-content: flex-start;
-        gap: 25px;
+        align-items: center;
+        padding: 0px 30px;
     }
    
 `;

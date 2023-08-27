@@ -10,9 +10,9 @@ export const Root = styled.div`
 export const Body = styled.div`
     width: 100%;
     height: 100%;
+    padding: 5px 20px;
     box-sizing: border-box !important;
 
     display: flex;
     align-items: flex-start;
-    justify-content: center;
 `;

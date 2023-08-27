@@ -40,7 +40,7 @@ export const Search: React.FC<SearchProps> = () => {
                         />
                     </S.SearchForm>
                     <S.CardList>
-                        {mockCards(2)}
+                        {mockCards(15)}
                     </S.CardList>
                 </S.Container>
             )}
