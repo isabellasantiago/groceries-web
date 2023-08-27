@@ -14,6 +14,17 @@ export const CardContainer = styled.div`
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    gap: 5px;
+
+
+    @media (min-width: 734px) {
+        /* flex-direction: row; */
+    }
+
+    @media (min-width: 910px) {
+        height: 90px;
+        padding: 10px;
+    }
 `;
 
 export const Title = styled.h1`
@@ -29,15 +40,11 @@ export const Img = styled.img`
     object-fit: cover;
 `;
 
-export const AdditionalInformation = styled.span<{$type?: string}>`
-    font: 600 10px 'Outfit', sans-serif;
-    color: #cfcfcf;
+export const AdditionalInformation = styled.span<{type?: string}>`
+
+    font: 600 ${props => props.type === 'price' ? '18px' : '12px'} 'Outfit', sans-serif;
+    color: ${props => props.type === 'price' ? '#000' : '#cfcfcf'};
 
     width: 100%;
     text-align: center;
-`;
-
-
-export const Price = styled.span`
-
 `;

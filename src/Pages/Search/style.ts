@@ -43,7 +43,7 @@ export const SearchBar = styled.input`
         height: 18px;
     }
 
-    @media (min-width: 764px) {
+    @media (min-width: 734px) {
         width: 50%;
         max-width: 390px;
         height: 22px;
@@ -58,5 +58,16 @@ export const SearchBar = styled.input`
 `;
 
 export const CardList = styled(Container)`
+    width: 70%;
+    border: 1px solid red;
     gap: 25px;
+
+    @media (min-width: 734px) {
+        height: 80vh;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        overflow-y: scroll;
+    }
 `;

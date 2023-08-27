@@ -37,6 +37,34 @@ export const Search: React.FC<SearchProps> = () => {
                             img_link='https://247wholesale.co.uk/wp-content/uploads/2021/04/1-2.jpg'
                             quantity={8}
                         />
+                        <Card
+                            description='chocolate'
+                            code_bar='1232323555466'
+                            price={4.87}
+                            img_link='https://247wholesale.co.uk/wp-content/uploads/2021/04/1-2.jpg'
+                            quantity={8}
+                        />
+                        <Card
+                            description='chocolate'
+                            code_bar='1232323555466'
+                            price={4.87}
+                            img_link='https://247wholesale.co.uk/wp-content/uploads/2021/04/1-2.jpg'
+                            quantity={8}
+                        />
+                        <Card
+                            description='chocolate'
+                            code_bar='1232323555466'
+                            price={4.87}
+                            img_link='https://247wholesale.co.uk/wp-content/uploads/2021/04/1-2.jpg'
+                            quantity={8}
+                        />
+                        <Card
+                            description='chocolate'
+                            code_bar='1232323555466'
+                            price={4.87}
+                            img_link='https://247wholesale.co.uk/wp-content/uploads/2021/04/1-2.jpg'
+                            quantity={8}
+                        />
                     </S.CardList>
                 </S.Container>
             )}

@@ -21,7 +21,9 @@ export const Card: React.FC<CardProps> = ({
         <S.CardContainer>
             <S.Title>{description}</S.Title>
             <S.Img src={img_link} alt={`image of ${description}`}/>
-
+            <S.AdditionalInformation>code {code_bar}</S.AdditionalInformation>
+            <S.AdditionalInformation type='price'>$ {price}</S.AdditionalInformation>
+            <S.AdditionalInformation>units left: {quantity}</S.AdditionalInformation>
         </S.CardContainer>
     )
 }
