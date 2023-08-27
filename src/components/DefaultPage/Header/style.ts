@@ -22,10 +22,9 @@ export const HeaderBar = styled.header`
     }
 
     @media (min-width: 910px) {
-        height: 90px;
+        height: 70px;
         padding: 10px;
     }
-
     
 `;
 

@@ -30,6 +30,7 @@ export const CardContainer = styled.div`
 export const Title = styled.h1`
     font: 600 18px 'Outfit', sans-serif;
     text-transform: capitalize;
+    margin: 0;
 `;
 
 export const Img = styled.img`

@@ -57,17 +57,34 @@ export const SearchBar = styled.input`
     }
 `;
 
-export const CardList = styled(Container)`
+export const CardList = styled(Container) <{ itemsQuantity?: number }>`
+    box-sizing: border-box;
     width: 70%;
+    gap: 20px;
+    justify-content: flex-start;
+    padding-bottom: 10px;
     border: 1px solid red;
-    gap: 25px;
+
+
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
 
     @media (min-width: 734px) {
-        height: 80vh;
+        width: 53%;
         flex-wrap: wrap;
         flex-direction: row;
+        align-items: flex-start;
         justify-content: space-evenly;
-
-        overflow-y: scroll;
     }
+    
+    @media (min-width: 914px) {
+        width: 90%;
+        justify-content: flex-start;
+        gap: 25px;
+    }
+   
 `;
