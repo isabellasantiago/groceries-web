@@ -1,21 +1,20 @@
 import React, { ChangeEvent } from 'react';
 import { useNavigate } from 'react-router-dom';
-import ClipLoader from "react-spinners/ClipLoader";
 import * as S from './style';
-import { 
+import {
     DefaultPage,
-    UploadButton 
+    UploadButton
 } from '@/components';
 import { postFile } from '@/services/postFile';
 import { useFile } from '@/helpers/context/useFile';
 
 
-interface LoadFileProps {}
+interface LoadFileProps { }
 
 export const LoadFile: React.FC<LoadFileProps> = () => {
     const navigate = useNavigate();
-    const { setFiles, setLoading, isLoading } = useFile();
-    
+    const { setFiles, setLoading } = useFile();
+
 
     const handleChange = async (event: ChangeEvent<HTMLInputElement>) => {
         setLoading(true)
@@ -25,18 +24,16 @@ export const LoadFile: React.FC<LoadFileProps> = () => {
         navigate('/search');
     }
 
-    return(
+    return (
         <DefaultPage>
-            {isLoading ? (<ClipLoader />) : (
-                <S.Content>
-                    <S.Instruction>
-                        Upload a CSV file to add products to the groceries shop
-                    </S.Instruction>
-                    <UploadButton
-                        handleChange={handleChange}
-                    />
-                </S.Content>
-            )}
+            <S.Content>
+                <S.Instruction>
+                    Upload a CSV file to add products to the groceries shop
+                </S.Instruction>
+                <UploadButton
+                    handleChange={handleChange}
+                />
+            </S.Content>
         </DefaultPage>
     )
 }
