@@ -4,6 +4,7 @@ import {
     DefaultPage,
     Card
 } from '@/components';
+import { useFile } from '@/helpers';
 
 const mockCards = (qt: number) => {
     const arr = [];
@@ -26,6 +27,8 @@ const mockCards = (qt: number) => {
 interface SearchProps { }
 
 export const Search: React.FC<SearchProps> = () => {
+    const { files } = useFile();
+
     return (
         <DefaultPage>
             <S.Container>
@@ -35,7 +38,16 @@ export const Search: React.FC<SearchProps> = () => {
                     />
                 </S.SearchForm>
                 <S.CardList>
-                    {mockCards(25)}
+                    {files?.map(({description, code_bar, img_link, quantity, price}) => (
+                        <Card
+                            description={description}
+                            code_bar={code_bar}
+                            price={price}
+                            img_link={img_link}
+                            quantity={quantity}
+                        />
+                    ))}
+                    {/* {mockCards(25)} */}
                 </S.CardList>
             </S.Container>
         </DefaultPage>

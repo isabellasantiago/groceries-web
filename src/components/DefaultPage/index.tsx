@@ -16,7 +16,7 @@ export const DefaultPage: React.FC<DefaultPageProps> = ({ children }) => {
         <S.Root>
             <Header/>        
             <S.Body>
-                {isLoading ? (<ClipLoader />) : children}
+                {isLoading ? (<S.ClipContainer><ClipLoader /></S.ClipContainer>) : children}
             </S.Body>
         </S.Root>
     )

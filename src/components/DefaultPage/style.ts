@@ -16,3 +16,8 @@ export const Body = styled.div`
     display: flex;
     align-items: flex-start;
 `;
+
+export const ClipContainer = styled(Body)`
+    justify-content: center;
+    align-items: center;    
+`;
