@@ -35,7 +35,7 @@ export const Search: React.FC<SearchProps> = () => {
                     />
                 </S.SearchForm>
                 <S.CardList>
-                    {mockCards(15)}
+                    {mockCards(25)}
                 </S.CardList>
             </S.Container>
         </DefaultPage>

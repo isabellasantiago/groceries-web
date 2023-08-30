@@ -5,11 +5,13 @@ export const Container = styled.div`
     box-sizing: border-box;
     width: 100%;
     height: 100%;
+    margin: 10px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 10px;
 `;
 
 export const SearchForm = styled.form`
@@ -50,20 +52,19 @@ export const SearchBar = styled.input`
     }
 
     @media (min-width: 910px) {
-        border-radius: 8px;
         width: 60%;
         max-width: 450px;
         height: 25px;        
     }
 `;
 
-export const CardList = styled(Container) <{ itemsQuantity?: number }>`
+
+export const CardList = styled.div<{ itemsQuantity?: number }>`
     box-sizing: border-box;
-    width: 70%;
+    display: grid;
     gap: 20px;
-    justify-content: flex-start;
     padding-bottom: 10px;
-    border: 1px solid red;
+    
 
 
     overflow-y: scroll;
@@ -73,19 +74,24 @@ export const CardList = styled(Container) <{ itemsQuantity?: number }>`
         display: none;
     }
 
-    @media (min-width: 670px) {
-        width: 55%;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: flex-start;
-        
+    @media (min-width: 500px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 680px) {
+        grid-template-columns: repeat(3, 1fr);
     }
     
-    @media (min-width: 914px) {
-        width: 90%;
-        align-items: center;
-        padding: 0px 30px;
+    @media (min-width: 900px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    @media (min-width: 1400px) {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    @media (min-width: 2000px) {
+        grid-template-columns: repeat(6, 1fr);
     }
    
 `;
