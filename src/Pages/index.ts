@@ -1,2 +1,2 @@
-export * from './LoadFile';
-export * from './Search';
+export { LoadFile } from './LoadFile';
+export { Search} from './Search';

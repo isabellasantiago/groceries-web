@@ -5,9 +5,9 @@ import * as S from './style';
 import { 
     DefaultPage,
     UploadButton 
-} from '../../components';
-import { postFile } from '../../services/postFile';
-import { useFile } from '../../helpers/context/useFile';
+} from '@/components';
+import { postFile } from '@/services/postFile';
+import { useFile } from '@/helpers/context/useFile';
 
 
 interface LoadFileProps {}

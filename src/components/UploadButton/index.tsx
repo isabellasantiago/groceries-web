@@ -1,5 +1,5 @@
 import React, { ChangeEvent } from 'react';
-import upload from '../../assets/upload.png';
+import upload from '@/assets/upload.png';
 import * as S from './style';
 
 interface UploadProps {

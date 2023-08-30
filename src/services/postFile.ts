@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import api from "./api"
+import { api } from "@/services"
 
 export const postFile = async (file: any) => {
     const formData = new FormData();

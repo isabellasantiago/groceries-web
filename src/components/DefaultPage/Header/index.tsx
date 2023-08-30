@@ -1,5 +1,5 @@
 import * as S from './style';
-import brand from '../../../assets/brand.svg';
+import brand from '@/assets/brand.svg';
 
 const Header = () => {
 

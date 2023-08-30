@@ -4,8 +4,8 @@ import * as S from './style';
 import {
     DefaultPage,
     Card
-} from '../../components';
-import { useFile } from '../../helpers/context/useFile';
+} from '@/components';
+import { useFile } from '@/helpers/context/useFile';
 
 const mockCards = (qt: number) => {
     const arr = [];
