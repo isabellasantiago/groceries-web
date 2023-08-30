@@ -6,23 +6,23 @@ import {
 } from '@/components';
 import { useFile } from '@/helpers';
 
-const mockCards = (qt: number) => {
-    const arr = [];
-    for (let i = 0; i < qt; i++) {
-        arr.push(
-            <Card
-                description='chocolate'
-                code_bar='1232323555466'
-                price={4.87}
-                img_link='https://247wholesale.co.uk/wp-content/uploads/2021/04/1-2.jpg'
-                quantity={8}
-            />
-        )
+// const mockCards = (qt: number) => {
+//     const arr = [];
+//     for (let i = 0; i < qt; i++) {
+//         arr.push(
+//             <Card
+//                 description='chocolate'
+//                 code_bar='1232323555466'
+//                 price={4.87}
+//                 img_link='https://247wholesale.co.uk/wp-content/uploads/2021/04/1-2.jpg'
+//                 quantity={8}
+//             />
+//         )
 
-    }
+//     }
 
-    return arr;
-}
+//     return arr;
+// }
 
 interface SearchProps { }
 
