@@ -9,7 +9,7 @@ interface UploadProps {
 export const UploadButton: React.FC<UploadProps> = ({ handleChange }) => {
     return(
         <S.Button>
-            <input id="fileInput" type="file" accept='.csv' onChange={handleChange}/>
+            <input id="fileInput" type="file" accept='.csv' onChange={handleChange} data-testId="file-input"/>
             <label htmlFor="fileInput">
                 choose a file
                 <S.ImgProcessor src={upload}/>

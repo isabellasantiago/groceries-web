@@ -27,7 +27,7 @@ export const LoadFile: React.FC<LoadFileProps> = () => {
     return (
         <DefaultPage>
             <S.Content>
-                <S.Instruction>
+                <S.Instruction data-testId="initial-message">
                     Upload a CSV file to add products to the groceries shop
                 </S.Instruction>
                 <UploadButton
